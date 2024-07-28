@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNotEqualf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/complex-float32-base-assert-is-not-equal/tags). For example,
+
+```javascript
 import isNotEqualf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@v0.1.1-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ var out = isNotEqualf( z1, z2 );
 <script type="module">
 
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
-import isNotEqualf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@v0.1.1-esm/index.mjs';
+import isNotEqualf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@esm/index.mjs';
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
