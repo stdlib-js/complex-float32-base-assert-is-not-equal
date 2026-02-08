@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNotEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@deno/mod.js';
+import isNotEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@v0.1.3-deno/mod.js';
 ```
 
 #### isNotEqual( z1, z2 )
@@ -91,7 +91,7 @@ var out = isNotEqual( z1, z2 );
 
 ```javascript
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
-import isNotEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@deno/mod.js';
+import isNotEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-assert-is-not-equal@v0.1.3-deno/mod.js';
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
