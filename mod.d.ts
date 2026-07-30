@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,26 +16,31 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_COMPLEX_FLOAT32_BASE_ASSERT_IS_NOT_EQUAL_H
-#define STDLIB_COMPLEX_FLOAT32_BASE_ASSERT_IS_NOT_EQUAL_H
+// TypeScript Version: 4.1
 
-#include "stdlib/complex/float32/ctor.h"
-#include <stdbool.h>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
 * Tests whether two single-precision complex floating-point numbers are not equal.
+*
+* @param z1 - first complex number
+* @param z2 - second complex number
+* @returns boolean indicating if both complex numbers are not equal
+*
+* @example
+* var Complex64 = require( '@stdlib/complex-float32-ctor' );
+*
+* var z1 = new Complex64( 5.0, 3.0 );
+* var z2 = new Complex64( 5.0, -3.0 );
+*
+* var v = isNotEqual( z1, z2 );
+* // returns true
 */
-bool stdlib_base_complex64_is_not_equal( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
+declare function isNotEqual( z1: Complex64, z2: Complex64 ): boolean;
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif // !STDLIB_COMPLEX_FLOAT32_BASE_ASSERT_IS_NOT_EQUAL_H
+// EXPORTS //
+
+export = isNotEqual;
